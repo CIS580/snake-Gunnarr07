@@ -6,8 +6,25 @@
   </head>
   <body>
     <h1>Play Snake</h1>
+    <div>
+        <h3 id="id_score">Score: </h3>
+    </div>
     <canvas id="snake" width="760" height="480"></canvas>
+    <div id="id_restart" class="modal">
+        <p>You loose</p>
+        <button id="id_button" onclick="restart()">Restart Game</button>
+    </div>
+    <div id="id_paused" class="modal">
+        <p>Paused</p>
+        <p>Press escape key (esc) to contiune playing snake</p>
+    </div>
     <h2>Instructions</h2>
+      <ul>
+          <li>Use the arrow keys to move the snake around the screen eating apples</li>
+          <li>Press the escape key (esc) to pause and unpause the game</li>
+          <li>Running into the walls or rocks will cause you to losse</li>
+          <li>Each time you eat an apple your snake grows and your score increases</li>
+      </ul>
     <script type="text/javascript" src="snake.js"></script>
   </body>
 </html>
